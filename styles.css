@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
+}
+
+header {
+    background-color: #262626;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6F61;
+}
+
+#hero {
+    background-color: #333333;
+    padding: 100px 20px;
+    text-align: center;
+    color: #FF6F61;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #1F1F1F;
+}
+
+#projects {
+    background-color: #262626;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #1F1F1F;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #FF6F61;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF8A65;
+    transform: translateY(-2px);
+}
+
+#contact {
+    background-color: #1F1F1F;
+}
+
+#contact a {
+    color: #FF6F61;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #FF8A65;
+}
+
+footer {
+    background-color: #262626;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #FF6F61;
+    transition: color 0.3s;
+}
+
+footer:hover {
+    color: #FF8A65;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
