@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card {
+    background: #222;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00d4ff;
+}
+
+.profile h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #00d4ff;
+}
+
+.profile p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+.contact h2,
+.projects h2 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #00d4ff;
+    animation: slideInDown 1s ease;
+}
+
+.contact p a {
+    text-decoration: none;
+    color: #00d4ff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+.actions .btn {
+    position: relative;
+    background: linear-gradient(135deg, #00d4ff, #005f99);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.actions .btn .ripple {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    transform-origin: center;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
